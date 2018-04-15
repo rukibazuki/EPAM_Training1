@@ -1,0 +1,57 @@
+p{
+  animation: around 4s linear 0s infinite;
+  background: turquoise;
+  color: white;
+  height: 160px;
+  line-height: 160px;
+  margin: 0;
+  position: absolute;
+  width: 160px;
+}
+
+@keyframes around {
+
+  0% { left: 240px; top: 0; 
+    border-radius:80px 80px 80px 80px;
+    background: rgb(48, 2, 255); }
+
+  25% { left: 1222px; top: 240;
+    border-radius:80px 30px 30px 80px; 
+    -webkit-transition-duration:1s;
+  transform: rotate(0deg)}
+
+  35% { left: 1222px; top: 240;
+      border-radius:80px 0px 0px 80px;
+      background: rgba(110, 96, 235, 0.808);  
+      } 
+  50% { left: 240px; top: 480px;
+  border-radius: 40px 0px 0px 40px ;
+ }
+
+ 55% { left: 240px; top: 480px;
+  border-radius: 40px 0px 0px 0px ;
+  background: rgb(238, 46, 104); 
+ }
+  60%{ left: 140px; bottom: 240px;
+    border-radius: 40px 0px 0px 0px;
+    transform: rotate(0deg);
+  }
+
+  75% {left: 0; top: 140px;
+       border-radius:0px 0px 0px 0px;
+       background: red;
+       animation-duration: 35s; }
+
+ 80% {left: 0; top: 140px;
+  border-radius:0px 0px 0px 0px;
+  transform: rotate(3600deg)}
+
+
+  100% { left: 240; top: 0; 
+    border-radius:80px 80px 80px 80px;} 
+}
+  
+  
+
+
+

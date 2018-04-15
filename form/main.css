@@ -1,0 +1,93 @@
+input{
+    width: 300px;
+	font-size: 13px;
+	padding: 6px 0 4px 10px;
+	border: 1px solid #cecece;
+	background: rgb(255, 255, 255);
+	border-radius: 8px;
+	margin-left: 10px;
+	
+}
+label{
+	display: block;
+	margin: 20px;
+	position: relative;
+}
+abbr{
+	color:  red;	
+}
+body{
+ width:80%;
+ margin:15px auto;
+}
+label{
+  font-size:20px;
+}
+div{
+ margin:5px;
+
+}
+.name1{
+  width: 300px;
+	font-size: 13px;
+	padding: 6px 10 77px 10px;
+	border: 1px solid #cecece;
+	background: rgb(255, 255, 255);
+	border-radius: 8px;
+	margin-left: 88px;
+	position: relative;
+}
+.name3{
+  width: 300px;
+	font-size: 13px;
+  border: 1px solid #cecece;
+	border-radius: 8px;
+	margin-left: 40px;
+	height: 70px; 
+	margin-left: 88px;
+	position: relative;
+}
+.name2{
+	background:rgb(163, 160, 160);
+}
+
+span{
+	display: inline-block;
+	position: absolute;
+	top: 0px;
+}
+
+input:focus + .support{
+	display: block;
+	margin-left: 430px;
+	background: red;
+	color:white;
+	border: 10px solid;	
+	width: 122px;
+	height: 0px;
+	margin-top: -10px;
+	padding: 5px 20px 30px 20px;	
+	border-left: 30px;
+}
+
+input:focus + .support::after {
+	content: ''; 
+	position: absolute;
+	left: -28px; top: 10px;
+	border: 10px solid transparent;
+	border-right: 20px solid rgb(255, 17, 0);
+ }
+
+span.support{
+	display: none;
+}
+
+input:valid + .support {
+	display: none;
+}
+
+:focus::-webkit-input-placeholder { 
+	color:blue;
+	transition: 1s linear;
+ }
+
